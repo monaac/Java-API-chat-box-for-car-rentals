@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class CarRentalAPI {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Welcome to the Car Rental API!");
+    System.out.println("Please select an option:");
+    System.out.println("1. View available cars");
+    System.out.println("2. Rent a car");
+    System.out.println("3. Return a car");
+    int option = sc.nextInt();
+    switch (option) {
+      case 1:
+        viewAvailableCars();
+        break;
+      case 2:
+        rentCar();
+        break;
+      case 3:
+        returnCar();
+        break;
+      default:
+        System.out.println("Invalid option selected. Please try again.");
+        break;
+    }
+  }
+  
+  private static void viewAvailableCars() {
+    // code to view available cars
+  }
+  
+  private static void rentCar() {
+    // code to rent a car
+  }
+  
+  private static void returnCar() {
+    // code to return a car
+  }
+}
